@@ -113,12 +113,7 @@ class ProductProvider extends Component {
         }
     };
     getTotals = () => {
-        // const subTotal = this.state.cart
-        //   .map(item => item.total)
-        //   .reduce((acc, curr) => {
-        //     acc = acc + curr;
-        //     return acc;
-        //   }, 0);
+        
         let subTotal = 0;
         this.state.cart.map(item => (subTotal += item.total));
         const tempTax = subTotal * 0.1;
@@ -141,7 +136,7 @@ class ProductProvider extends Component {
                 };
             },
             () => {
-                // console.log(this.state);
+                
             }
         );
     };

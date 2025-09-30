@@ -16,7 +16,7 @@ class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isMobile: window.innerWidth <= 768, // Adjust the breakpoint as needed
+      isMobile: window.innerWidth <= 768, 
       menuOpen: false,
     };
 
@@ -34,7 +34,7 @@ class Navbar extends Component {
 
   handleResize() {
     this.setState({
-      isMobile: window.innerWidth <= 768, // Adjust the breakpoint as needed
+      isMobile: window.innerWidth <= 768, 
     });
   }
 
